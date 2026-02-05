@@ -22,3 +22,24 @@ h1 {
   border-radius: 20px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
 }
+
+.city-input,
+.weather-button {
+  font-family: playwrite nz basic;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.city-input {
+  width: 50%;
+  border: 1px solid #247ef2;
+  font-weight: 500;
+}
+.weather-button {
+  color: white;
+  background: #2a57f7;
+  width: 15%;
+  margin-left: 5px;
+  border: 1px solid #2a57f7;
+}
