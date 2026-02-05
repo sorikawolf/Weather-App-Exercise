@@ -4,43 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App Exercise</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input
-          type="search"
-          placeholder="Enter a city"
-          id="city-input"
-          required
-        />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <h1>Quebec</h1>
-      <div>
-        <p>
-          Tuesday 14:29, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13 km/hr
-        </p>
-      </div>
-      <div>❄️ 25℃</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/sorikawolf" target="_blank">Sorika Wolf</a>,
-      hosted on
-      <a
-        href="https://github.com/sorikawolf/Weather-App-Exercise"
-        target="_blank"
-        >Github</a
-      >
-      and
-      <a href="https://sorika-weather-week-7.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+    <div class="appBody">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city"
+            id="city-input"
+            required
+          />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <h1>Quebec</h1>
+        <div>
+          <p>
+            Tuesday 14:29, scattered clouds
+            <br />
+            Humidity: 66%, Wind: 3.13 km/hr
+          </p>
+        </div>
+        <div>❄️ 25℃</div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/sorikawolf" target="_blank">Sorika Wolf</a>,
+        hosted on
+        <a
+          href="https://github.com/sorikawolf/Weather-App-Exercise"
+          target="_blank"
+          >Github</a
+        >
+        and
+        <a href="https://sorika-weather-week-7.netlify.app/" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

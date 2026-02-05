@@ -1,0 +1,12 @@
+h1 {
+  color: blue;
+}
+
+.appBody {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #d1d1d1;
+  padding: 60px 30px 30px 30px;
+  border-radius: 20px;
+}
