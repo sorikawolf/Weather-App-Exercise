@@ -1,5 +1,11 @@
 body {
   font-family: roboto flex;
+  min-height: 100vh;
+  background: linear-gradient(
+    0.3deg,
+    rgb(30, 161, 239) 0.9%,
+    rgb(49, 46, 252) 88.6%
+  );
 }
 
 h1 {
@@ -8,8 +14,9 @@ h1 {
 
 .appBody {
   display: block;
+  background: white;
   max-width: 600px;
-  margin: 45px auto;
+  margin: 45px auto 60px;
   border: 2px solid #3965c6;
   padding: 60px 30px 30px 30px;
   border-radius: 20px;

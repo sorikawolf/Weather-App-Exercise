@@ -15,14 +15,20 @@
   <body>
     <div class="appBody">
       <header>
-        <form>
+        <form class="weather-search-form">
           <input
             type="search"
             placeholder="Enter a city"
             id="city-input"
+            class="city-input"
             required
           />
-          <input type="submit" value="search" />
+          <input
+            type="submit"
+            value="search"
+            id="weather-button"
+            class="weather-button"
+          />
         </form>
       </header>
       <main>
