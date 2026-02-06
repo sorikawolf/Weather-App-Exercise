@@ -8,8 +8,19 @@ body {
   );
 }
 
+header {
+  border-bottom: 1px solid#247ef2;
+  padding: 30px;
+}
+
 h1 {
   color: blue;
+}
+
+footer {
+  padding: 30px 0 0 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .appBody {
