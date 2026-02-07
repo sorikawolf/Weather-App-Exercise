@@ -13,8 +13,8 @@ header {
   padding: 30px;
 }
 
-h1 {
-  color: blue;
+p {
+  margin: 0;
 }
 
 footer {
@@ -27,9 +27,9 @@ footer {
   display: block;
   background: white;
   max-width: 600px;
-  margin: 45px auto 60px;
+  margin: 60px auto;
   border: 2px solid #3965c6;
-  padding: 60px 30px 30px 30px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
 }
@@ -53,4 +53,46 @@ footer {
   width: 15%;
   margin-left: 5px;
   border: 1px solid #2a57f7;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.current-city {
+  font-size: 38px;
+  font-weight: 650;
+  color: #2a57f7;
+  margin-bottom: 5px;
+}
+.current-conditions {
+  color: rgba(42, 42, 43, 0.6);
+  font-weight: 500;
+}
+.current-conditions strong {
+  color: #f65282;
+}
+
+.current-temp {
+  display: flex;
+}
+
+.temp-emoji {
+  font-size: 35px;
+  margin-top: 48px;
+  margin-right: 5px;
+}
+.temp-value {
+  font-size: 75px;
+  font-weight: 650;
+  color: #f65282;
+  margin-top: 25px;
+}
+.temp-unit {
+  font-size: 25px;
+  color: #f65282;
+  font-weight: 600;
+  margin-top: 37px;
+  margin-left: 2px;
 }
