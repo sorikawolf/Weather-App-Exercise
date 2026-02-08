@@ -21,7 +21,7 @@
   <body>
     <div class="appBody">
       <header>
-        <form class="weather-search-form">
+        <form class="weather-search-form" id="weather-search-form">
           <input
             type="search"
             placeholder="Enter a city"
@@ -40,7 +40,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="current-city">Quebec</h1>
+            <h1 class="current-city" id="current-city">Quebec</h1>
             <p class="current-conditions">
               Tuesday 14:29, scattered clouds
               <br />
@@ -69,5 +69,6 @@
         >
       </footer>
     </div>
+    <script src="src/weather.js"></script>
   </body>
 </html>
