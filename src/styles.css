@@ -96,3 +96,8 @@ footer {
   margin-top: 37px;
   margin-left: 2px;
 }
+
+#current-day,
+#time {
+  font-weight: 650;
+}
