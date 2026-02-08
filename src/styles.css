@@ -78,10 +78,10 @@ footer {
   display: flex;
 }
 
-.temp-emoji {
-  font-size: 35px;
-  margin-top: 48px;
-  margin-right: 5px;
+.temp-icon {
+  margin-top: 18px;
+  margin-right: 15px;
+  width: 70px;
 }
 .temp-value {
   font-size: 75px;
