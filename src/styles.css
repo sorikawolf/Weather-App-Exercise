@@ -91,7 +91,7 @@ footer {
 }
 .temp-unit {
   font-size: 25px;
-  color: #f65282;
+  color: rgb(246, 82, 130);
   font-weight: 600;
   margin-top: 37px;
   margin-left: 2px;
@@ -100,4 +100,38 @@ footer {
 #current-day,
 #time {
   font-weight: 650;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(29, 156, 239, 0.5);
+}
+
+.forecast-day {
+  text-align: center;
+  font-weight: 650;
+  color: #1d9cef;
+}
+
+.forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.high {
+  font-weight: bold;
+  color: rgb(246, 82, 130);
+}
+
+.low {
+  color: rgb(246, 82, 130, 0.8);
 }
