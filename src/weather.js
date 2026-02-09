@@ -64,4 +64,25 @@ if (minutes < 10) {
 }
 timeElement.innerHTML = `${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  let forecastHtml = "";
+
+  forecastDays.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-date">
+            <div class="forecast-day">${day}</div>
+            <div class="forecast-icon">❄</div>
+            <div class="forecast-temp">
+              <div class="high">11°</div>
+              <div class="low">5°</div>
+            </div>
+          </div>`;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
 searchCity("Quebec");
+displayForecast();
