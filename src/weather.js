@@ -21,6 +21,8 @@ function displayWeather(response) {
 
   let iconElement = document.querySelector("#temp-icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="Weather Icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -64,7 +66,16 @@ if (minutes < 10) {
 }
 timeElement.innerHTML = `${hours}:${minutes}`;
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "357affaact442eeoc3f4199173062fb9";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   let forecastHtml = "";
 
@@ -85,4 +96,3 @@ function displayForecast() {
 }
 
 searchCity("Quebec");
-displayForecast();
