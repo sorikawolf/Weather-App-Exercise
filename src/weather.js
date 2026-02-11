@@ -70,24 +70,24 @@ function getForecast(city) {
   let apiKey = "357affaact442eeoc3f4199173062fb9";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   console.log(apiUrl);
+
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
   console.log(response.data);
 
-  let forecastDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   let forecastHtml = "";
 
-  forecastDays.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="forecast-date">
-            <div class="forecast-day">${day}</div>
-            <div class="forecast-icon">❄</div>
+            <div class="forecast-day">Tues</div>
+            <div class="forecast-icon"><img src="${day.condition.icon_url}" alt="Weather Icon" /></div>
             <div class="forecast-temp">
-              <div class="high">11°</div>
-              <div class="low">5°</div>
+              <div class="high">${Math.round(day.temperature.maximum)}°</div>
+              <div class="low">${Math.round(day.temperature.minimum)}°</div>
             </div>
           </div>`;
   });

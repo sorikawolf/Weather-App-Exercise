@@ -111,20 +111,21 @@ footer {
 }
 
 .forecast-day {
+  font-size: 18px;
   text-align: center;
   font-weight: 650;
   color: #1d9cef;
 }
 
-.forecast-icon {
-  text-align: center;
-  font-size: 38px;
+.forecast-icon img {
+  width: 60px;
+  justify-content: center;
 }
 
 .forecast-temp {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .high {
@@ -134,4 +135,9 @@ footer {
 
 .low {
   color: rgb(246, 82, 130, 0.8);
+}
+
+.high,
+.low {
+  font-size: 16px;
 }
